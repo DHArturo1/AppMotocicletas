@@ -1,4 +1,4 @@
-package com.example.moto.ui.gallery;
+package com.example.moto.ui.eliminar;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,17 +12,17 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 import com.example.moto.R;
 
-public class GalleryFragment extends Fragment {
+public class EliminarFragment extends Fragment {
 
-    private GalleryViewModel galleryViewModel;
+    private EliminarViewModel eliminarViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
             ViewGroup container, Bundle savedInstanceState) {
-        galleryViewModel =
-                ViewModelProviders.of(this).get(GalleryViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_gallery, container, false);
-        final TextView textView = root.findViewById(R.id.text_gallery);
-        galleryViewModel.getText().observe(this, new Observer<String>() {
+        eliminarViewModel =
+                ViewModelProviders.of(this).get(EliminarViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_eliminar, container, false);
+        final TextView textView = root.findViewById(R.id.text_slideshow);
+        eliminarViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);

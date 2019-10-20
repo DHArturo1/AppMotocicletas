@@ -1,4 +1,4 @@
-package com.example.moto.ui.share;
+package com.example.moto.ui.crear;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,17 +12,17 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 import com.example.moto.R;
 
-public class ShareFragment extends Fragment {
+public class CrearFragment extends Fragment {
 
-    private ShareViewModel shareViewModel;
+    private CrearViewModel crearViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
             ViewGroup container, Bundle savedInstanceState) {
-        shareViewModel =
-                ViewModelProviders.of(this).get(ShareViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_share, container, false);
-        final TextView textView = root.findViewById(R.id.text_share);
-        shareViewModel.getText().observe(this, new Observer<String>() {
+        crearViewModel =
+                ViewModelProviders.of(this).get(CrearViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_crear, container, false);
+        final TextView textView = root.findViewById(R.id.text_gallery);
+        crearViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);

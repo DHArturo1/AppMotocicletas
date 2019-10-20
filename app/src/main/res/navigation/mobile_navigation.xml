@@ -13,31 +13,31 @@
 
     <fragment
         android:id="@+id/nav_gallery"
-        android:name="com.example.moto.ui.gallery.GalleryFragment"
+        android:name="com.example.moto.ui.crear.CrearFragment"
         android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        tools:layout="@layout/fragment_crear" />
 
     <fragment
         android:id="@+id/nav_slideshow"
-        android:name="com.example.moto.ui.slideshow.SlideshowFragment"
+        android:name="com.example.moto.ui.eliminar.EliminarFragment"
         android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        tools:layout="@layout/fragment_eliminar" />
 
     <fragment
         android:id="@+id/nav_tools"
-        android:name="com.example.moto.ui.tools.ToolsFragment"
+        android:name="com.example.moto.ui.creditos.CreditosFragment"
         android:label="@string/menu_tools"
-        tools:layout="@layout/fragment_tools" />
+        tools:layout="@layout/fragment_creditos" />
 
     <fragment
         android:id="@+id/nav_share"
-        android:name="com.example.moto.ui.share.ShareFragment"
+        android:name="com.example.moto.ui.modificar.ModificarFragment"
         android:label="@string/menu_share"
-        tools:layout="@layout/fragment_share" />
+        tools:layout="@layout/fragment_modificar" />
 
     <fragment
         android:id="@+id/nav_send"
-        android:name="com.example.moto.ui.send.SendFragment"
+        android:name="com.example.moto.ui.listar.ListarFragment"
         android:label="@string/menu_send"
-        tools:layout="@layout/fragment_send" />
+        tools:layout="@layout/fragment_listar" />
 </navigation>

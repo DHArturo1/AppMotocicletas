@@ -1,4 +1,4 @@
-package com.example.moto.ui.slideshow;
+package com.example.moto.ui.modificar;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,17 +12,17 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 import com.example.moto.R;
 
-public class SlideshowFragment extends Fragment {
+public class ModificarFragment extends Fragment {
 
-    private SlideshowViewModel slideshowViewModel;
+    private ModificarViewModel modificarViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
             ViewGroup container, Bundle savedInstanceState) {
-        slideshowViewModel =
-                ViewModelProviders.of(this).get(SlideshowViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_slideshow, container, false);
-        final TextView textView = root.findViewById(R.id.text_slideshow);
-        slideshowViewModel.getText().observe(this, new Observer<String>() {
+        modificarViewModel =
+                ViewModelProviders.of(this).get(ModificarViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_modificar, container, false);
+        final TextView textView = root.findViewById(R.id.text_share);
+        modificarViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);
